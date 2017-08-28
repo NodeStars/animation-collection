@@ -1,0 +1,283 @@
+/*optional for bringing icon in center*/
+.icon-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: #EBE5DF;
+    min-height: 400px;
+}
+.ac-animated-svg-icon {
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+/*optional animation on hover toggle button */
+.toggle-button {
+  position: absolute;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: sans-serif;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  left: 50%;
+  top: 5%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: background-color 0.5s;
+  z-index: 1;
+}
+.toggle-button:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+.toggle-button.toggle-on {
+  background-color: rgba(28, 186, 110, 0.5);
+}
+.toggle-button.toggle-on:hover {
+  background-color: rgba(28, 186, 110, 1);
+}
+/*optional ends*/
+
+.ac-animated-svg-icon {
+    /*icon - size*/
+    width: 300px;
+    padding-bottom: 300px;
+
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box;
+	text-align: center;
+	background-color: #EBE5DF;
+	cursor: pointer;
+
+    height: 0;
+}
+.ac-animated-svg-icon .ac-animated-svg-icon-contents {
+    position: absolute;
+    /* icon - padding */
+    left: 20px;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+}
+.ac-animated-svg-cup {
+	position: relative;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+}
+.ac-animated-svg-cup .svg-cup {
+	padding-top: 20%;
+    padding-bottom: 4%;
+	height: 100%;
+	position: relative;
+	z-index: 1;
+    box-sizing: border-box;
+    width: 100%;
+}
+.ac-animated-svg-cup .svg-steamline {
+	height: 15%;
+	position: absolute;
+	left: 50%;
+	opacity: 0;
+	z-index: 0;
+}
+.ac-animated-svg-cup .svg-steamline-1 {
+	top: 2%;
+	left: 15%;
+}
+.ac-animated-svg-cup .svg-steamline-2 {
+	top: 6%;
+	left: 35%;
+}
+
+.ac-animated-svg-cup .svg-steamline-3 {
+	top: 3%;
+	left: 55%;
+}
+
+.ac-animated-svg-icon:hover .ac-animated-svg-cup .svg-steamline-1, .ac-animated-svg-icon.ac-svg-animated .ac-animated-svg-cup .svg-steamline-1 {
+    animation: acAnimatedSvgIconAnimation1 2s ease-out infinite;
+}
+
+@keyframes acAnimatedSvgIconAnimation1 {
+    0% {
+        opacity: 0;
+    }
+    1% {
+        opacity: 0;
+        top: 40%;
+    }
+    70% {
+        opacity: 1;
+        top: 1%;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.ac-animated-svg-icon:hover .ac-animated-svg-cup .svg-steamline-2, .ac-animated-svg-icon.ac-svg-animated .ac-animated-svg-cup .svg-steamline-2 {
+    animation: acAnimatedSvgIconAnimation2 1.8s ease-out infinite;
+}
+
+@keyframes acAnimatedSvgIconAnimation2 {
+    0% {
+        opacity: 0;
+    }
+
+    1% {
+        opacity: 0;
+        top: 40%;
+    }
+
+    70% {
+        opacity: 1;
+        top: 5%;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.ac-animated-svg-icon:hover .ac-animated-svg-cup .svg-steamline-3, .ac-animated-svg-icon.ac-svg-animated .ac-animated-svg-cup .svg-steamline-3 {
+    animation: acAnimatedSvgIconAnimation3 2.2s ease-out infinite;
+}
+
+@keyframes acAnimatedSvgIconAnimation3 {
+    0% {
+        opacity: 0;
+    }
+
+    1% {
+        opacity: 0;
+        top: 40%;
+    }
+
+    70% {
+        opacity: 1;
+        top: 2%;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.ac-animated-svg-cup .svg-dot {
+	height: 5%;
+	position: absolute;
+	left: 50%;
+	opacity: 0;
+	z-index: 0;
+}
+.ac-animated-svg-cup .svg-dot-1 {
+	left: 50%;
+	top: 2%;
+	transform: translateX(5px);
+}
+.ac-animated-svg-cup .svg-dot-2 {
+	left: 35%;
+	top: 10%;
+	transform: translateX(5px);
+}
+.ac-animated-svg-cup .svg-dot-3 {
+	left: 35%;
+	top: 1%;
+	transform: translateX(-10px);
+}
+.ac-animated-svg-cup .svg-dot-4 {
+	left: 20%;
+	top: 10%;
+	transform: translateX(-5px);
+}
+
+.ac-animated-svg-icon:hover .ac-animated-svg-cup .svg-dot-1, .ac-animated-svg-icon.ac-svg-animated .ac-animated-svg-cup .svg-dot-1 {
+    animation: acAnimatedSvgIconDotAnimation1 2.1s ease-out infinite;
+}
+
+@keyframes acAnimatedSvgIconDotAnimation1 {
+    0% {
+        opacity: 0;
+    }
+    1% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.ac-animated-svg-icon:hover .ac-animated-svg-cup .svg-dot-2, .ac-animated-svg-icon.ac-svg-animated .ac-animated-svg-cup .svg-dot-2 {
+    animation: acAnimatedSvgIconDotAnimation2 1.9s ease-out infinite;
+}
+
+@keyframes acAnimatedSvgIconDotAnimation2 {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.ac-animated-svg-icon:hover .ac-animated-svg-cup .svg-dot-3, .ac-animated-svg-icon.ac-svg-animated .ac-animated-svg-cup .svg-dot-3 {
+    animation: acAnimatedSvgIconDotAnimation3 2.5s ease-out infinite;
+}
+
+@keyframes acAnimatedSvgIconDotAnimation3 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.ac-animated-svg-icon:hover .ac-animated-svg-cup .svg-dot-4, .ac-animated-svg-icon.ac-svg-animated .ac-animated-svg-cup .svg-dot-4 {
+    animation: acAnimatedSvgIconDotAnimation4 2.3s ease-out infinite;
+}
+
+@keyframes acAnimatedSvgIconDotAnimation4 {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.ac-animated-svg-cup .svg-shadow {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: 0px;
+    display: none;
+}
+.ac-animated-svg-icon.ac-svg-shadow .ac-animated-svg-cup .svg-shadow {
+    display: block;
+}
