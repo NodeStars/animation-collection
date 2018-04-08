@@ -1,3 +1,12 @@
 # animation-collection
-## 动画特效收集
-#### 这些动画来源于codepen、前端论坛的开源代码或是在平时网页浏览过程中一些比较吸引本人的效果，记录于此、便于学习
+    some animation attracted me in open source forum or certain of cool websites,  
+    just for learning.  
+    please don‘t plan to use it for other purpose （especially using for bussiness purpose）
+
+### includes
+    1.svg hot cup
+    2.gravity point 
+    3.zh login bg canvas
+    4.invision login
+    5.flippreloader
+    6.scroll load animation
