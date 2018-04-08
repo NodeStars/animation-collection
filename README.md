@@ -7,6 +7,6 @@
     1.svg hot cup
     2.gravity point 
     3.zh login bg canvas
-    4.invision login
-    5.flippreloader
-    6.scroll load animation
+    4.invision login  
+    5.flippreloader  
+    6.scroll load animation  
